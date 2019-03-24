@@ -1,0 +1,84 @@
+/*///////////////////////////////////////////////-DESKTOP & TV -/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (max-width: 1280px) {}
+
+/*///////////////////////////////////////////////-TABLET-/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1028px) {}
+
+
+/*Ipad Pro*/
+
+@media (max-width: 835px) {}
+
+
+/*Kindle Fire*/
+
+@media (max-width: 801px) {}
+
+/*///////////////////////////////////////////////-MOBILE-/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {}
+
+/*mobile iPhone Plus - 414 px*/
+
+@media screen and (max-width: 415px) {}
+
+/*mobile -iPhone 6/7/8 - 375 px*/
+
+@media screen and (max-width: 376px) {}
+
+/*mobile -samsung Galaxy s9/s9+ - 361 px*/
+
+@media screen and (max-width: 361px) {
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}

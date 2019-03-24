@@ -1,0 +1,95 @@
+/* Base styling for disabled carousel */
+.carousel {
+  box-sizing: border-box;
+  border: 5px solid #eac8d2;
+  overflow: hidden;
+  padding-top: 25%;
+    padding-bottom: 25%;
+  position: relative;
+}
+
+.carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner > li {
+  background: rgba(0, 255, 255, 0.2);
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+.carousel-inner > li:nth-child(1) {
+  background: rgba(255, 0, 0, 0.2);
+}
+.carousel-inner > li:nth-child(2) {
+  background: rgba(255, 255, 0, 0.2);
+}
+.carousel-inner > li:nth-child(3) {
+  background: rgba(0, 255, 0, 0.2);
+}
+.carousel-inner > li:nth-child(4) {
+  background: rgba(0, 255, 255, 0.2);
+}
+.carousel-inner > li:nth-child(5) {
+  background: rgba(0, 0, 255, 0.2);
+}
+
+/* If enabled, carousel has class of carousel-active */
+.carousel-active .carousel-inner > li {
+  position: absolute;
+  width: 70%;
+}
+.carousel-active .carousel-inner.animate {
+  transition: left .3s linear;
+}
+
+.carousel-control {
+  transition: background .3s linear;
+  backround: rgba(0, 0, 0, 0.4);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 1em;
+  position: absolute;
+  z-index: 2000;
+}
+.carousel-control:hover, .carousel-control:focus {
+  background: rgba(0, 0, 0, 0.55);
+}
+.carousel-control.prev {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.carousel-control.next {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* CAROUSEL NEXT > */
+.carousel-control {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*I EDITED THIS TO MOVE NEXT > TO WHERE IT WAS SUPOSE TO ON THE RIGHT*/
+    left: 85%;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+
+}
