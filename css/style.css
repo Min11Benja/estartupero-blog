@@ -1,0 +1,1808 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. Global CSS
+	1.1 Animation CSS
+	1.2 Preloader CSS
+	1.3 Slider Prev/Next CSS
+2. Top Menu
+3. Home Section
+4. Service Section
+5. Portfolio Section
+6. News Section
+7. Support Section
+8. Focus Section
+9. Pricing Section
+10. Team Section
+11. Contact Section
+12. Single Post
+13. Footer
+14. Responsive Part
+-------------------------------------------------------------------*/
+
+
+
+/* ===================================
+    1. Global CSS
+====================================== */
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff; 
+    background-color: #f2f1f6;
+}
+
+body a
+{
+    text-decoration: none;
+    color: #23214c;
+    transition: color .2s linear;
+}
+
+body a:hover, body a:focus
+{
+    color: #d0a8b1;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.no-gutter > [class*='col-'] 
+{
+    padding-right:0;
+    padding-left:0;
+}
+
+.vertical-align 
+{
+    display: table;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] 
+{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.m-top-5
+{
+    margin-top: 5px;
+}
+
+.m-top-10
+{
+    margin-top: 10px;
+}
+
+.m-top-20
+{
+    margin-top: 20px;
+}
+
+.m-top-40
+{
+    margin-top: 40px;
+}
+
+.m-bottom-5
+{
+    margin-bottom: 5px;
+}
+
+.m-bottom-10
+{
+    margin-bottom: 10px;
+}
+
+.m-bottom-20
+{
+    margin-bottom: 20px;
+}
+
+.m-bottom-40
+{
+    margin-bottom: 40px;
+}
+
+.row .row
+{
+    margin: 0;
+}
+
+.box-wrapper
+{
+    width: 1170px;          
+    margin: 0 auto;
+    display: block;    
+    background-color: #fff;
+}
+
+.content-980
+{
+    width: 980px;    
+    margin: 0 auto;
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 120px;    
+    max-width: 100%;
+}
+
+.box-wrapper img, .content-980 img
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* ===================================
+    1.1 Animation CSS
+====================================== */
+
+.animate
+{
+    opacity: 0;
+    transition: .3s ease-in;
+    -ms-transform: translate(0px,20px); 
+    -webkit-transform: translate(0px,20px);
+    transform: translate(0px,20px);
+}
+
+.animate.show-it
+{
+    opacity: 1;
+    -ms-transform: translate(0px,0px); 
+    -webkit-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+}
+
+.wait-03s
+{
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.wait-06s
+{
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+.wait-09s
+{
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+}
+
+
+
+/* ===================================
+    1.2 Preloader CSS
+====================================== */
+
+.doc-loader 
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;	
+    background-color: #fff;
+}
+
+.doc-loader img
+{    
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    margin-top: -65px;
+    left: 50%;
+    margin-left: -50px;
+
+}
+
+/* ===================================
+    1.3 Slider Prev/Next CSS
+====================================== */
+
+.slick-next, .slick-prev
+{
+    transition: color .3s ease-in-out;
+    color: #5f5a6d;
+	z-index: 1001;
+}
+
+.slick-next:before, .slick-prev:before
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;    
+}
+
+.slick-next:hover, .slick-prev:hover
+{
+    color: #d0a8b1;
+}
+
+.slick-prev
+{
+    right: 5%;
+}
+
+
+
+/* ===================================
+    2. Top Menu
+====================================== */
+
+.menu-wrapper
+{        
+    z-index: 9999 !important;
+    background-color: #D0CCDA;
+    width: 100% !important;
+    top: 0;
+    position: fixed;
+    transition: background-color .3s linear;
+    -webkit-transform: translateZ(0);
+}
+
+#header-main-menu
+{    
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+}
+
+img.menu-logo
+{    
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.main-menu.sm-clean
+{
+    background-color: transparent;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-menu.sm-clean a
+{    
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 40px;
+    color: #615D6E;        
+    text-transform: uppercase;
+    letter-spacing: 0.03cm;
+}
+
+.main-menu.sm-clean .sub-menu a 
+{
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.sm-clean .current_page_item a 
+{
+    color: #fff !important;
+}
+
+.main-menu.sm-clean a:hover 
+{
+    color: #fff !important;
+}
+
+.sm-clean li.active a
+{
+    color: #fff !important;
+}
+
+.mob-menu
+{
+    display: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: color .2s linear;
+    color: #fff;
+}
+
+
+
+/* ===================================
+    3. Home Section
+====================================== */
+
+#home
+{
+    background-color: #dad9e1;
+    padding-top: 1%;
+    padding-bottom: 300px;
+    margin-bottom: -300px;
+}
+
+#home .box-wrapper
+{
+    background-color: #dad9e1;
+}
+
+
+
+/* ===================================
+    4. Service Section
+====================================== */
+
+
+.menu-wrapper.section-services
+{
+    background-color: #524e5e;
+}
+
+.menu-wrapper.section-services .main-menu.sm-clean a
+{
+    color: #d0a8b1;
+}
+
+h2.big-title
+{    
+    font-size: 48px;    
+    line-height: 60px;          
+    padding-bottom: 30px;
+}
+
+#services .box-wrapper
+{
+    background-color: #5f5a6d;    
+    background-image: url(images/section_square.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.service-img
+{
+    display: inline-block;    
+}
+
+.service-txt
+{
+    display: inline-block;
+    width: 295px;
+    margin-left: 33px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.service-txt h4
+{
+    font-size: 24px;    
+    padding-bottom: 10px;
+}
+
+.service-txt p
+{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.service-img img
+{
+    width: 75px;
+    height: 75px;
+}
+
+
+/* ===================================
+    5. Portfolio Section
+====================================== */
+
+
+.menu-wrapper.section-portfolio
+{
+    background-color: #dcc1c7;
+}
+
+.grid 
+{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.grid-item 
+{
+    float: left;
+    font-size: 0;
+    line-height: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box; 
+}
+
+.grid-item img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-sizer, .grid-item 
+{
+    width: 390px;    
+}
+
+.grid-item.p_1x1
+{
+    width: 390px;    
+}
+
+.grid-item.p_2x2
+{
+    width: 780px;    
+}
+
+
+.portfolio-text-holder
+{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    font-size: 20px;    
+    text-align: center; 
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    background-color: #fff;
+}
+
+.portfolio-text-holder:hover
+{
+    opacity: 1;
+}
+
+.portfolio-text-wrapper
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-type
+{
+    line-height: 100%;
+    font-size: 11px;
+    color: #9a9a9a;    
+    padding-bottom: 20px;        
+}
+
+.portfolio-type img 
+{
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-text
+{
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;  
+    color: #5F5A6D;
+}
+
+.grid-item a:hover
+{
+    color: #191919;
+}
+
+.process-holder
+{
+    text-align: center;
+}
+
+.process
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #d0a8b1;
+    font-size: 82px;
+    display: inline-block;
+    width: 230px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.process span 
+{
+    letter-spacing: -15px;
+    margin-left: -15px;
+}
+
+.process span:first-child
+{
+    font-size: 132px;
+}
+
+.process span:nth-child(2) 
+{
+    vertical-align: -25px;
+    margin-left: -15px;
+}
+
+.process span:nth-child(3) 
+{
+    vertical-align: -60px;
+    margin-left: -13px;
+}
+
+.process .process-txt
+{
+    font-size: 20px;
+    line-height: 25px;
+    color: #616263;
+	margin: 0;	
+}
+
+.process-holder .separator
+{
+    width: 96px;
+    margin: 0 20px;
+    height: 10px;
+    background-color: #f4eaed;
+    display: inline-block;
+    vertical-align: 125px;
+}
+
+.process-holder  .process:last-child
+{
+	padding-bottom: 0;
+}
+
+div.pp_default a.pp_arrow_previous 
+{
+    background-image: url(images/nav_left.png);
+    background-size: 20px;
+    background-position: 0 0;
+}
+
+div.pp_default a.pp_arrow_next 
+{
+    background-image: url(images/nav_right.png);
+    background-size: 20px;
+    background-position: 0 0;
+    margin-left: 10px;
+}
+
+div.pp_default .pp_close
+{
+    background-image: url(images/close.png);
+    background-position: 0 0;
+    background-size: 30px;
+}
+
+
+
+/* ===================================
+    6. News Section
+====================================== */
+
+
+.menu-wrapper.section-news
+{
+    background-color: #595367;
+}
+
+.menu-wrapper.section-news .main-menu.sm-clean a
+{
+    color: #e3ccd1;
+}
+
+.news-holder
+{
+    display: flex;
+}
+
+#news .post
+{
+    padding: 120px 75px 120px 100px;
+}
+
+.post-1
+{
+    background-color: #615c6f;
+}
+
+.post-2
+{
+    background-color: #6a6579;
+}
+
+.post .category
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #e3ccd1;
+    letter-spacing: 5px;
+}
+
+.post .entry-title
+{
+    max-width: 300px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;    
+}
+
+.post .excerpt
+{
+    padding: 50px 0 25px 0;    
+}
+
+.post .read-more
+{
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    transition: all .2s linear;
+}
+
+.post .read-more:hover
+{
+    color: #615c6f;
+    background-color: #fff;
+}
+
+
+
+/* ===================================
+    7. Support Section
+====================================== */
+
+
+.menu-wrapper.section-support
+{
+    background-color: #dcc1c7;
+}
+
+#support .box-wrapper
+{
+    background-image: url("images/bg_img_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote
+{
+    background-color: #fff;
+    padding: 100px;
+}
+
+.quote h2
+{
+    font-size: 48px;
+    line-height: 60px;
+    color: #c28c99;
+    margin: 0;
+}
+
+.support-service
+{
+    color: #e3ccd1;
+    background-color: #615c6f;
+    padding: 80px 70px !important;
+    margin-bottom: 180px !important;
+}
+
+img.support-img
+{
+    width: 120px;    
+}
+
+.support-item-text
+{
+    font-weight: 600;    
+}
+
+
+
+/* ===================================
+    8. Focus Section
+====================================== */
+
+
+.menu-wrapper.section-focus
+{
+    background-color: #c596a1;
+}
+
+.focus-holder
+{
+    padding: 100px;
+    color: #686475;
+}
+
+.focus-holder h2
+{
+    font-size: 48px;
+    line-height: 60px;
+    color: #5f5a6d;
+    margin: 0;
+}
+
+.testimonial-slider-holder
+{
+    background-color: #5f5a6d;
+    text-align: center;
+}
+
+.testimonial-slider-holder .slick-next
+{
+    color: #fff;
+    right: 50%;
+    margin-right: -110px;
+    bottom: 125px;
+}
+
+.testimonial-slider-holder .slick-prev
+{
+    color: #fff;
+    right: 50%;
+    bottom: 125px;
+    margin-right: 90px;
+}
+
+.testimonial-slider-holder .slick-next:hover, .testimonial-slider-holder .slick-prev:hover
+{
+    color: #d0a8b1;    
+}
+
+.testimonial-slider
+{
+    display: block;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.testimonial-slider-quote
+{    
+    font-size: 250px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: block;
+    line-height: 100%;
+    padding-top: 30px;
+    margin-bottom: -90px;
+    color: #6b6679;
+}
+
+.testimonial-slider-content
+{
+    text-align: center;
+}
+
+.testimonial-slider-holder .author-text
+{
+    font-size: 22px;    
+    max-width: 630px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 35px
+}
+
+.testimonial-slider-holder img.author-img
+{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    border-radius: 90%;
+}
+
+.testimonial-slider-holder .author-name
+{
+    font-size: 14px;
+    color: #9b98a4;
+    font-weight: 600;
+}
+
+
+
+/* ===================================
+    9. Pricing Section
+====================================== */
+
+
+.pricing-intro
+{
+    color: #5a5667;
+}
+
+.pricing-holder 
+{
+    text-align: center;
+    background-color: #D0A8B1;
+    width: 90%;
+    padding-bottom: 30px;
+    margin-left: auto;    
+    margin-right: auto;
+    margin-bottom: 30px;    
+}
+
+.pricing-title 
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C39CA5;    
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    padding: 25px 0;
+    margin: 0
+}
+
+.pricing-content 
+{
+    padding: 25px 0;
+}
+
+.pricing-content p 
+{
+    margin: 0;
+}
+
+.pricing-price 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    line-height: 100%;
+    letter-spacing: -5px;
+    margin-right: 5px;
+}
+
+.pricing-price span 
+{
+    font-size: 60px;
+    vertical-align: text-top;
+    letter-spacing: 0;
+}
+
+.pricing-buy 
+{
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    width: 75%;
+	max-width: 220px;
+    transition: all .2s linear;
+}
+
+.pricing-buy:hover
+{
+    color: #615c6f;
+    background-color: #fff;
+}
+
+.pricing-holder.price2 
+{    
+    background-color: #ae8b93;
+}
+
+.pricing-holder.price2 .pricing-title
+{
+    background-color: #a07d85;
+}
+
+.pricing-holder.price3
+{    
+    background-color: #8b6c78;
+}
+
+.pricing-holder.price3 .pricing-title
+{
+    background-color: #7a5c67;
+}
+
+
+
+/* ===================================
+    10. Team Section
+====================================== */
+
+
+.menu-wrapper.section-team
+{
+    background-color: #c1b0bc;
+}
+
+#team .box-wrapper
+{
+    background-color: #6a6579;
+}
+
+.team-member img
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.team-member .member-wrapper
+{
+    padding: 45px 70px 55px 70px;
+}
+
+.team-member.featured 
+{
+    background-color: white;
+    color: #686475;
+    margin-top: -160px;
+    margin-bottom: 140px;
+}
+
+.team-member.featured .member-name
+{
+    color: #5f5a6d;
+}
+
+.team-member .member-name
+{
+    line-height: 25px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.team-member .member-position 
+{
+    font-size: 12px;
+    color: #ba9099;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+
+.team-member .member-text
+{
+    font-size: 14px;    
+}
+
+.team-member.member-3
+{
+    background-color: #615c6f;
+}
+
+.progress_bar 
+{
+    margin-bottom: 15px;
+    padding: 0 70px;
+}
+
+.progress_bar_field_holder 
+{
+    height: 59px;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.progress_bar_field_holder:hover .progress_bar_title
+{
+    left: 10px;
+    color: #fff !important;
+}
+
+.progress_bar_field_holder:hover .progress_bar_percent_text
+{
+    right: 10px;
+    color: #fff !important;
+}
+
+.progress_bar_title
+{
+    color: #D7C6D0;
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+    left: -11px;
+    font-weight: bold;    
+    font-size: 45px;
+    line-height: 100%;
+    transition: color .2s linear, left .2s linear;
+}
+
+.progress_bar_percent_text
+{
+    color: #D7C6D0;
+    position: absolute;
+    right: -35px;
+    top: 15px;
+    z-index: 2;
+    font-weight: bold;    
+    font-size: 35px;
+    line-height: 100%;
+    transition: color .2s linear, right .2s linear;
+}
+
+.progress_bar_field_perecent 
+{
+    background-color: #D0A8B1;
+    height: 59px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* ===================================
+    11. Contact Section
+====================================== */
+
+
+.menu-wrapper.section-contact
+{
+    background-color: #514d5d;
+}
+
+.menu-wrapper.section-contact .main-menu.sm-clean a
+{
+    color: #d0a8b1;
+}
+
+ul.counter-widget 
+{
+    background-color: #5A5667;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+}
+
+#contact ul.counter-widget li
+{
+    display: inline-block;
+    list-style: none;	
+    padding: 0 50px 20px 50px;	
+}
+
+#contact ul.counter-widget li .count
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#contact ul.counter-widget li span
+{
+    color: #d0a8b1;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0 15px 0;
+    display: block
+}
+
+.contact-info 
+{
+    color: #686475;
+    padding: 100px 130px !important;
+}
+
+.contact-form-holder
+{    
+    background-image: url("images/bg_img_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-form
+{
+    max-width: 100%;
+    width: 770px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #fff;
+    padding: 12% 25% 0 25%;
+    min-height: 570px;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea
+{
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 50px;    
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    line-height: 25px;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+.contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 1;
+}
+.contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+.contact-form input[type=text]:-moz-placeholder, .contact-form input[type=email]:-moz-placeholder, .contact-form textarea:-moz-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 1;
+}
+
+.contact-form input[type=text], .contact-form input[type=email]
+{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea
+{
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.contact-form textarea:focus
+{
+    height: 150px;
+    overflow: auto;
+}
+
+.contact-form input[name="your-name"]
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contact-form input[type=submit]
+{	
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 12px 0px;
+    cursor: pointer;
+    margin-top: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all .2s linear;
+}
+
+.contact-form input[type=submit]:hover
+{
+    color: #615c6f;
+    background-color: #fff;
+}
+
+div.contact-form-response-output
+{
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+span.contact-form-not-valid-tip
+{
+    font-size: 10px;
+}
+
+
+/* ===================================
+    12. Single Post
+====================================== */
+
+
+.single-post img.single-header-img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.single-post .single-wrapper .box-wrapper
+{
+    position: relative;
+    margin-top: -8%;
+}
+
+.single-post .single-holder 
+{
+    width: 780px;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.single-post h1.entry-title 
+{
+    text-align: center;
+    color: #5f5a6d;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.single-post .post-info 
+{   
+    font-size: 16px;
+    font-weight: 600;
+    color: #d7b2bd;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;    
+}
+
+.single-post .post-info div
+{
+    display: inline-block;
+}
+
+.single-post .post-info .post-date:after
+{
+    content: "•";
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.single-post .post-info .cat-links ul, .single-post .post-info .cat-links ul li
+{
+    display: inline-block;
+}
+
+.single-post .post-info .cat-links ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.single-post blockquote 
+{
+    border: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    color: #cb6383;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.single-post blockquote:before 
+{    
+    content: '\201C';
+    font-size: 180px;
+    line-height: 100%;
+    font-family: 'Montserrat', sans-serif, Arial;
+    color: #eac8d2;
+    text-align: center;
+    margin-bottom: -65px;
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* ===================================
+    13. Footer
+====================================== */
+
+
+footer
+{
+    font-size: 14px;
+    color: #686475;        
+}
+
+footer a
+{
+    color: #686475;
+}
+
+.footer
+{
+    background: #5a5667;
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 50px;    
+} 
+
+.footer-text
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 35px;    
+    letter-spacing: -1px;
+}
+
+.social-footer span.fa 
+{
+    font-size: 100px;
+    padding: 40px;
+}
+
+.copyright a 
+{
+    color: #fff;
+}
+
+
+/* ===================================
+    14. Responsive Part
+====================================== */
+
+@media screen and (max-width: 1200px) {   
+
+    .content-980
+    {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }   
+
+    .image-slider-wrapper 
+    {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .service-txt
+    {
+        width: 210px;
+    }
+
+    .box-wrapper, .grid   
+    {
+        width: 975px;
+    }   
+
+    .grid-sizer, .grid-item
+    {
+        width: 325px; 
+    }
+
+    .grid-item.p_1x1
+    {
+        width: 325px;        
+    }    
+
+    .grid-item.p_2x2
+    {
+        width: 650px;        
+    }
+
+
+    .focus-holder
+    {
+        padding: 10%;
+    }
+
+    .focus-holder h2
+    {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .process-holder .process
+    {
+        width: 187px;
+    }
+
+    .process-holder .separator
+    {
+        width: 58px;
+    }
+
+    .contact-info
+    {
+        padding: 10% !important;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .image-slider-wrapper .slick-next
+    {
+        right: 20px;
+    }
+
+    .image-slider-wrapper .slick-prev
+    {
+        right: 70px;
+    }
+
+    .box-wrapper, .grid
+    {
+        width: 100%;
+    }
+
+    .grid-sizer, .grid-item
+    {
+        width: 50%; 
+    }
+
+    .grid-item.p_1x1
+    {
+        width: 50%;        
+    }    
+
+    .grid-item.p_2x2
+    {
+        width: 50%;        
+    }
+
+    .service-items-holder
+    {
+        padding-top: 50px;
+    }
+
+    .process-holder .process 
+    {
+        width: 172px;
+        font-size: 60px;
+    }    
+
+    .process span:first-child 
+    {        
+        font-size: 90px;
+    }
+
+    .process .process-txt
+    {
+        font-size: 16px;
+    }
+
+    .process-holder .separator 
+    {
+        width: 30px;
+        margin: 0;
+    }
+
+    #news .post 
+    {
+        padding: 10%;
+    }
+
+    #news .post .entry-title
+    {
+        font-size: 36px;
+        line-height: 45px;
+        max-width: none;
+    }
+
+    .team-member.featured 
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 925px) {  
+
+    [class*='col-'] 
+    {
+        text-align: center;
+    }
+
+    img.menu-logo
+    {
+        width: auto;
+        height: 90px;
+        left: 5%;
+    }
+
+    .mob-menu
+    {
+        display: block;
+    }
+
+    .mob-menu:hover
+    {
+        cursor: pointer;
+    }
+    
+    .main-menu.sm-clean
+    {
+        padding-bottom: 0;
+    }
+
+    .main-menu
+    {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+        display: none;
+    }
+
+    .main-menu ul 
+    {
+        width: 12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+    }
+
+    .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .main-menu.sm-clean a 
+    {
+        line-height: 18px;
+    }
+
+    .main-menu.sm-clean .sub-menu a 
+    {
+        font-size: 16px;
+        line-height: 18px;    
+        text-align: center;
+    }  
+
+    h2.big-title
+    {
+        font-size: 38px;
+        line-height: 44px;
+    }   
+
+    .support-service
+    {
+        padding: 10% !important;
+    }
+
+    .quote
+    {
+        padding: 10%;
+    }
+
+    .quote h2
+    {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+
+    .progress_bar
+    {
+        padding: 0 10%;
+    }
+
+    .team-member .member-wrapper
+    {
+        padding: 10%;
+    }
+
+    #contact ul.counter-widget li
+    {
+        padding: 3%;        
+    }
+
+    .contact-form
+    {    
+        padding-top: 12%;
+        padding-right: 10%;
+        padding-bottom: 1px;
+        padding-left: 10%;
+    }
+
+    .social-footer span.fa 
+    {
+        font-size: 70px;
+        padding: 20px;
+    }
+
+    .single-post .single-holder
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .single-post .single-wrapper .box-wrapper
+    {
+        margin-top: 0;
+    }
+
+    .single-post h1.entry-title
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .single-post .post-info
+    {
+        font-size: 14px;
+    }
+
+    .single-post blockquote 
+    {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .single-post blockquote:before 
+    {
+        font-size: 150px;
+        margin-bottom: -75px;
+    }
+}
+
+@media screen and (max-width: 805px) { 
+
+
+    .service-txt
+    {
+        width: 295px;
+    }
+
+    .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea, p.custom-field-class, #commentform #email, #commentform #author, #commentform #comment
+    {
+        width: 100% !important;
+    }        
+
+}
+	
+
+@media screen and (max-width: 750px) { 
+
+    .service-img
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .service-txt
+    {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }    
+	
+    .process-holder .process 
+    {        
+        margin: 0 auto;
+        padding-bottom: 30px;
+        display: block;
+    }  
+
+    .process-holder .separator
+    {
+        display: none;
+    }  
+
+    .news-holder
+    {
+        display: block;
+    }
+
+    .testimonial-slider-holder .author-text
+    {
+        font-size: 17px;
+        max-width: 90%;        
+        line-height: 24px;
+    }
+
+    #contact ul.counter-widget li
+    {
+        padding: 3% 0;    
+        display: block;
+    }
+
+    .footer-text 
+    {  
+        font-size: 15px;    
+        line-height: 22px;    
+        max-width: 90%;
+    }
+
+    .social-footer span.fa 
+    {
+        font-size: 40px;
+        padding: 30px 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) { 
+    .grid-sizer, .grid-item, .grid-item.p_1x1, .grid-item.p_2x2
+    {
+        width: 100%; 
+    }
+}
