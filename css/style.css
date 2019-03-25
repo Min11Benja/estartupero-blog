@@ -1344,7 +1344,7 @@ span.contact-form-not-valid-tip
     border: 0;
     padding: 0;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     line-height: 40px;
     color: #cb6383;
@@ -1360,7 +1360,7 @@ span.contact-form-not-valid-tip
     line-height: 100%;
     font-family: 'Montserrat', sans-serif, Arial;
     color: #eac8d2;
-    text-align: center;
+    text-align: left;
     margin-bottom: -65px;
     display: block;
     font-weight: 400;
