@@ -1290,7 +1290,7 @@ span.contact-form-not-valid-tip
 
 .single-post .single-holder 
 {
-    width: 780px;
+    width: 1080px;
     max-width: 90%;
     margin: 0 auto;
     color: #000;
@@ -1311,7 +1311,7 @@ span.contact-form-not-valid-tip
     font-size: 16px;
     font-weight: 600;
     color: #d7b2bd;
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
     padding-bottom: 60px;    
 }
