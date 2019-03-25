@@ -216,3 +216,6 @@ img {
 .blog-post-tags{
     padding-bottom: 30px;
 }
+.article-content{
+  position:relative;
+}

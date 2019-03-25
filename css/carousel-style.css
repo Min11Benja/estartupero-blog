@@ -4,7 +4,7 @@
   border: 5px solid #eac8d2;
   overflow: hidden;
   padding-top: 25%;
-    padding-bottom: 25%;
+    padding-bottom: 45%;
   position: relative;
 }
 
@@ -45,7 +45,7 @@
 /* If enabled, carousel has class of carousel-active */
 .carousel-active .carousel-inner > li {
   position: absolute;
-  width: 70%;
+  width: 80%;
 }
 .carousel-active .carousel-inner.animate {
   transition: left .3s linear;
