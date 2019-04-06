@@ -6,8 +6,8 @@
 */
 
 @media (min-width: 1281px) {
-    
-        .footer-text {
+
+    .footer-text {
 
         font-size: 20px;
         max-width: 80%;
@@ -35,7 +35,18 @@
         position: relative;
         margin-top: 1%;
     }
-    
+
+    img.menu-logo {
+        width: auto;
+        height: 80px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: 0px;
+    }
+
 }
 
 /* 
@@ -73,6 +84,17 @@
     .single-post .single-wrapper .box-wrapper {
         position: relative;
         margin-top: 1%;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 80px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: 0px;
     }
 }
 
@@ -166,13 +188,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
+        height: 80px;
         left: 5%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -279,7 +301,7 @@
 
     img.menu-logo {
 
-        top: -10px;
+        top: -5px;
     }
 
     .single-post .post-info {
@@ -381,13 +403,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -422,6 +444,7 @@
 /*Kindle Fire*/
 
 @media (max-width: 801px) {
+
 
     .pdf-sidebar-box {
         padding-left: 0.5%;
@@ -490,13 +513,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -600,15 +623,17 @@
         padding-left: 0px;
     }
 
+
+
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -703,13 +728,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -803,13 +828,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {
@@ -903,13 +928,13 @@
 
     img.menu-logo {
         width: auto;
-        height: 85px;
-        left: 5%;
+        height: 60px;
+        left: 10%;
     }
 
     img.menu-logo {
 
-        top: -10px;
+        top: 0px;
     }
 
     .single-post .post-info {

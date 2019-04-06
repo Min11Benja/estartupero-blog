@@ -272,8 +272,8 @@ h1,h2,h3,h4,h5,h6
 
 img.menu-logo
 {    
-    width: 100px;
-    height: 130px;
+    width: 80px;
+    height: 90px;
     position: absolute;
     left: 0;
     top: 10px;
@@ -923,6 +923,11 @@ img.support-img
     transition: all .2s linear;
 }
 
+/*
+ .footer-logo{
+    border:3px red solid;
+}
+*/
 .pricing-buy:hover
 {
     color: #615c6f;
