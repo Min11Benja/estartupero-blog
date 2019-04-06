@@ -5,14 +5,76 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+    
+        .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 0px;
+    }
+
+    .social-footer {
+        padding-left: 0px;
+    }
+
+    div .box-wrapper .sugested-cont-box {
+        max-width: 900px;
+    }
+
+    div #portfolio-grid.grid {
+        max-width: 900px;
+    }
+
+    .single-post .single-wrapper .box-wrapper {
+        position: relative;
+        margin-top: 1%;
+    }
+    
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+
+
+    .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 0px;
+    }
+
+    .social-footer {
+        padding-left: 0px;
+    }
+
+    div .box-wrapper .sugested-cont-box {
+        max-width: 900px;
+    }
+
+    div #portfolio-grid.grid {
+        max-width: 900px;
+    }
+
+    .single-post .single-wrapper .box-wrapper {
+        position: relative;
+        margin-top: 1%;
+    }
+}
 
 /*///////////////////////////////////////////////-TABLET-/////////////////////////////////////////////////////////*/
 
@@ -21,38 +83,29 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (max-width: 1028px) {}
+@media (max-width: 1028px) {
 
 
-/*Ipad Pro*/
+    div .box-wrapper .sugested-cont-box {
+        max-width: 680px;
+    }
 
-@media (max-width: 835px) {}
+    div #portfolio-grid.grid {
+        max-width: 680px;
+    }
 
+    .single-post .single-wrapper .box-wrapper {
+        position: relative;
+        margin-top: 0%;
+    }
 
-/*Kindle Fire*/
+    .pdf-sidebar-box {
+        padding-left: 0.5%;
+    }
 
-@media (max-width: 801px) {}
-
-/*///////////////////////////////////////////////-MOBILE-/////////////////////////////////////////////////////////*/
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (max-width: 480px) {}
-
-/*mobile iPhone Plus - 414 px*/
-
-@media screen and (max-width: 415px) {}
-
-/*mobile -iPhone 6/7/8 - 375 px*/
-
-@media screen and (max-width: 376px) {}
-
-/*mobile -samsung Galaxy s9/s9+ - 361 px*/
-
-@media screen and (max-width: 361px) {
+    [class*="col-"] {
+        text-align: left;
+    }
 
     #home h1 {
 
@@ -81,4 +134,870 @@
         font-size: 20px;
         padding-bottom: 10px;
     }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+        max-width: 400px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 95px;
+    }
+
+    .social-footer {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+    .pdf-sidebar-box {
+        padding-left: 0.5%;
+    }
+
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+        max-width: 400px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 55px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+
+}
+
+/*Ipad Pro*/
+
+@media (max-width: 835px) {
+    .pdf-sidebar-box {
+        padding-left: 0.5%;
+    }
+
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+        max-width: 400px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 55px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+}
+
+
+/*Kindle Fire*/
+
+@media (max-width: 801px) {
+
+    .pdf-sidebar-box {
+        padding-left: 0.5%;
+    }
+
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+        max-width: 400px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        font-size: 20px;
+        max-width: 80%;
+        padding-bottom: 15px;
+
+    }
+
+    .copyright {
+        padding-left: 50px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+
+}
+
+/*///////////////////////////////////////////////-MOBILE-/////////////////////////////////////////////////////////*/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+    .pdf-sidebar-box {
+        padding-left: 3.5%;
+    }
+
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+        font-size: 17px;
+        max-width: 90%;
+        padding-bottom: 15px;
+    }
+
+    .copyright {
+        padding-left: 20px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+
+}
+
+/*mobile iPhone Plus - 414 px*/
+
+@media screen and (max-width: 415px) {
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+        font-size: 17px;
+        max-width: 90%;
+        padding-bottom: 15px;
+    }
+
+    .copyright {
+        padding-left: 20px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+}
+
+/*mobile -iPhone 6/7/8 - 375 px*/
+
+@media screen and (max-width: 376px) {
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        max-width: 80%;
+        padding-bottom: 15px;
+    }
+
+    .copyright {
+        padding-left: 20px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+}
+
+/*mobile -samsung Galaxy s9/s9+ - 361 px*/
+
+@media screen and (max-width: 361px) {
+    [class*="col-"] {
+        text-align: left;
+    }
+
+    #home h1 {
+
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #home h2 {
+        background-color: #ffacf8;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    h2.big-title {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .service-txt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .service-txt h4 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        top: 150px;
+        left: 200px;
+
+    }
+
+    .box {
+        background-color: rgba(0, 255, 0, 0.2);
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .sidebar-wrapper {
+        border: 2px solid #ddd;
+        padding-left: 0px;
+    }
+
+    img.menu-logo {
+        width: auto;
+        height: 85px;
+        left: 5%;
+    }
+
+    img.menu-logo {
+
+        top: -10px;
+    }
+
+    .single-post .post-info {
+
+        padding-left: 20px;
+    }
+
+    .steps-area {
+        padding: 25px 0;
+    }
+
+
+
+    .footer-text {
+
+        max-width: 80%;
+        padding-bottom: 15px;
+    }
+
+    .copyright {
+        padding-left: 20px;
+    }
+
+    .social-footer {
+        padding-left: 35px;
+    }
+
+}
+
+/*
+Responsive Utilites Style (This css is removed from beta version)
+*/
+.hidden-xs-up {
+    display: none !important;
+}
+
+@media (max-width: 575px) {
+    .hidden-xs-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .hidden-sm-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-md-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-md-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hidden-lg-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hidden-lg-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-xl-up {
+        display: none !important;
+    }
+}
+
+.hidden-xl-down {
+    display: none !important;
+}
+
+.visible-print-block {
+    display: none !important;
 }

@@ -1347,7 +1347,7 @@ span.contact-form-not-valid-tip
     text-align: left;
     font-size: 30px;
     line-height: 40px;
-    color: #cb6383;
+    color: rgba(255, 0, 0, 0.2);
     font-weight: 300;
     font-style: italic;
     letter-spacing: -1px;
@@ -1387,7 +1387,7 @@ footer a
 
 .footer
 {
-    background: #5a5667;
+    background: rgba(0, 0, 255, 0.2);
     color: #fff;
     padding: 60px 0;
     margin-bottom: 50px;    

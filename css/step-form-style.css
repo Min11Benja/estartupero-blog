@@ -1,0 +1,121 @@
+
+.card {
+  position: relative;
+  top: 120px;
+  left: 550px;
+  transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box {
+  background-color: rgba(0, 255, 0, 0.2);
+  width: 50%;
+  height: 235px;
+  border-radius: 5px;
+}
+.box h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 21pt;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.box p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-right: 40px;
+  color: black;
+}
+
+.tri {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid rgba(255, 255, 0, 0.5);
+  margin-left: 45px;
+  margin-bottom: -20px;
+}
+
+#back {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#back p {
+  text-align: center;
+  color: #3498db;
+  font-family: sans-serif;
+}
+
+#next {
+  display: inline-block;
+  float: right;
+  background: #3498db;
+  height: 40px;
+  width: 110px;
+  cursor: pointer;
+  border-radius: 0 0 5px;
+}
+#next p {
+  margin-left: -3px;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#progress {
+  display: inline-block;
+  width: 168px;
+  margin-left: 45px;
+}
+
+.bubble {
+  width: 10px;
+  height: 10px;
+  background-color: #DAECF9;
+  display: inline-block;
+  border-radius: 12.5px;
+  position: absolute;
+}
+
+.connector {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #DAECF9;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  margin-top: -6px;
+  margin-left: 6px;
+}
+
+.bubble-fill {
+  background-color: #3498db;
+}
+
+.tap {
+  margin-left: 1.5px;
+}
+
+.bottom-element {
+  height: 40px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+

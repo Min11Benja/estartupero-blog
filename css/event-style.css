@@ -1,0 +1,134 @@
+@import url("https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+
+.event-box {
+  margin: 0 auto;
+  max-width: 640px;
+    
+}
+
+.event-box a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.event-box {
+  overflow-x: hidden;
+  padding: 30px;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-size: 90%;
+  line-height: 1.5;
+  color: #637d99;
+  background-color: #F3F3F3;
+}
+
+.event-box h2 {
+  margin: 1.875em 0 0 0;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #919FAF;
+  text-transform: uppercase;
+}
+
+.event-box li {
+  overflow: hidden;
+  margin: 1px -20px;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+    margin-top:5px;
+}
+.event-box li .date {
+  float: left;
+  padding: 0.125em 0.75em 0 0;
+  margin-left: 0.25em;
+  margin-right: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  border-right: 2px solid #919FAF;
+}
+.event-box li .date .weekday, li .date .day {
+  display: block;
+}
+.event-box li .date .weekday {
+  font-size: 0.75em;
+}
+.event-box li .date .day {
+  margin-top: -2px;
+  font-size: 1.3em;
+}
+.event-box li a {
+  position: relative;
+  top: 3px;
+  display: block;
+  float: right;
+  width: 40px;
+  line-height: 2.5;
+  text-align: center;
+  color: #919FAF;
+}
+.event-box li h3 {
+  font-weight: bold;
+  margin-bottom: -3px;
+  margin-top: 3px;
+    letter-spacing: normal;
+}
+.event-box li .duration, li .location {
+  font-size: 15px;
+  color: #919FAF;
+  -webkit-font-smoothing: antialiased;
+}
+.event-box li .duration {
+  margin-right: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.5em;
+  border-right: 1px solid #E2E5E5;
+    font-size: 12px;
+}
+
+.event-box li.past {
+  color: #919FAF;
+  border-color: #E2E5E5;
+  background-color: #F3F3F3;
+}
+
+.event-box li.next .date {
+  border-right-color: #1ABC9C;
+  border-width: 0.25em;
+  margin-right: 0.75em;
+  padding-right: 0.625em;
+}
+
+.event-box li:first-child {
+  margin-top: 2px;
+}
+
+button.subscribe {
+  position: relative;
+  top: -4px;
+  left: -11px;
+}
+button.subscribe span {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+button.subscribe span:last-child {
+  font-size: 0.5em;
+  top: 7px;
+  left: 10px;
+}
+
+.event-box p {
+    line-height: 1.8em;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.event-box span.location{
+    color: red;
+    font-size: 12px;
+}
